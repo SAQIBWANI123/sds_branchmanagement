@@ -44,8 +44,11 @@
         'views/sale_order_shopify_view.xml',
         'views/account_move_shopify_view.xml',
     ],
+    
+    'images': [
+        'static/description/banner.png',
+    ],
     'qweb': ['static/src/xml/*.xml'],
-    'images': ['static/description/banner.png'],
     'price': 49.00,
     'currency': 'EUR',
     'license': 'OPL-1',
