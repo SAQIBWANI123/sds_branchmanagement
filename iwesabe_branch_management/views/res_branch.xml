@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_res_branch_form" model="ir.ui.view">
+            <field name="name">res.branch.form</field>
+            <field name="model">res.branch</field>
+            <field name="arch" type="xml">
+                <form string="Branch List">
+                    <sheet>
+                        <group cols="4">
+                            <group>
+                                <field name="name"/>
+                                <field name="company_id"/>
+                                <field name="telephone_no"/>
+                                <field name="gst_no"/>
+                                <field name="is_shopify_branch"/>
+                                <field name="state_id" required="1"/>
+                                <field name="term_conditions_proforma"/>
+                                <field name="term_conditions_purchase"/>
+                            </group>
+                            <group>
+                                <field name="branch_code" required="1"/>
+                                <field name="address"/>
+                                <field name="term_conditions"/>
+                                <field name="term_conditions1"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_branch_list" model="ir.ui.view">
+            <field name="name">res.branch.list</field>
+            <field name="model">res.branch</field>
+            <field name="arch" type="xml">
+                <list string="Branches">
+                    <field name="branch_code"/>
+                    <field name="name"/>
+                    <field name="is_shopify_branch"/>
+                    <field name="company_id"/>
+                    <field name="address"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="action_res_branch" model="ir.actions.act_window">
+            <field name="name">Branch</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.branch</field>
+            <field name="view_mode">list,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Click here to create a new branch
+                </p>
+            </field>
+        </record>
+
+
+        <!-- Branch Group -->
+        <record id="view_branch_group_list" model="ir.ui.view">
+            <field name="name">res.branch.group.list</field>
+            <field name="model">res.branch.group</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <list editable="bottom">
+                    <field name="company_id" invisible="1"/>
+                    <field name="sequence"  widget="handle"/>
+                    <field name="name"/>
+                    <field name="excluded_branch_ids" widget="many2many_tags" 
+                    options="{'no_create': True}"/>
+                    <field name="company_id" groups="base.group_multi_company"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="view_branch_group_form" model="ir.ui.view">
+            <field name="name">res.branch.group.form</field>
+            <field name="model">res.branch.group</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <form string="Branch Groups">
+                    <sheet>
+                        <group>
+                            <field name="company_id" invisible="1"/>
+                            <field name="name" placeholder="e.g. BG1, BG2, ..."/>
+                            <field name="excluded_branch_ids" widget="many2many_tags" 
+                            options="{'no_create': True}"/>
+                            <field name="sequence" groups="base.group_no_one"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_branch_group_list" model="ir.actions.act_window">
+            <field name="name">Branch Groups</field>
+            <field name="res_model">res.branch.group</field>
+            <field name="help" type="html">
+              <p class="o_view_nocontent_smiling_face">
+                Add a Branch Group
+              </p><p>
+                Branch groups are used in reporting to display relevant data together.
+              </p>
+            </field>
+        </record>
+
+
+        <menuitem action="action_res_branch" id="main_menu_res_branch" 
+        parent="base.menu_users"/>
+        <menuitem action="action_branch_group_list" 
+        id="main_menu_res_branch_group"
+        sequence="2" 
+        parent="base.menu_users"/>
+    </data>
+</odoo>

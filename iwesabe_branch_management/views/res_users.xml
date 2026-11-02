@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_user_form_inherited" model="ir.ui.view">
+        <field name="name">res.user.form.in.branch</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+
+            <group name="other_preferences" position="inside">
+                <group name="branch">
+                    <field name="branch_ids" widget="many2many_tags"/>
+                    <field name="branch_id"
+                           options="{'no_open': True, 'no_create': True, 'no_create_edit': True}"/>
+                </group>
+            </group>
+
+        </field>
+    </record>
+
+
+    <record id="view_users_form_simple_modif_inherit" model="ir.ui.view">
+        <field name="name">res.users.preferences.form</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form_simple_modif"/>
+        <field name="arch" type="xml">
+
+            <group name="other_preferences" position="inside">
+                <field name="branch_id"
+                       options="{'no_create': True}"
+                       context="{'branch_id': branch_id}"
+                       groups="iwesabe_branch_management.group_branch_user_manager"/>
+            </group>
+
+        </field>
+    </record>
+
+</odoo>

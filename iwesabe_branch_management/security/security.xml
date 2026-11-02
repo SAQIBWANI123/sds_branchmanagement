@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.module.category" id="module_branch_management">
+        <field name="name">Branch</field>
+        <field name="sequence">11</field>
+    </record>
+
+    <record id="branch_management_privilege" model="res.groups.privilege">
+        <field name="name">Branch</field>
+        <field name="sequence">11</field>
+        <field name="category_id" ref="module_branch_management"/>
+    </record>
+
+    <record id="group_branch_user" model="res.groups">
+        <field name="name">User</field>
+        <field name="privilege_id" ref="branch_management_privilege"/>
+        <field name="implied_ids"
+               eval="[(4, ref('base.group_user'))]"/>
+        <field name="user_ids"
+               eval="[(4, ref('base.user_root'))]"/>
+    </record>
+
+    <record id="group_branch_user_manager" model="res.groups">
+        <field name="name">Manager</field>
+        <field name="privilege_id" ref="branch_management_privilege"/>
+        <field name="implied_ids"
+               eval="[(4, ref('group_branch_user'))]"/>
+        <field name="user_ids"
+               eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
+    </record>
+
+    <!-- KEEP YOUR EXISTING IR RULES BELOW -->
+
+    <record id="branch_manager_rule" model="ir.rule">
+        <field name="name">Res Branch Manager</field>
+        <field name="model_id" ref="model_res_branch"/>
+        <field name="global" eval="True"/>
+        <field name="domain_force">[(1,'=',1)]</field>
+        <field name="groups"
+               eval="[(4, ref('iwesabe_branch_management.group_branch_user_manager'))]"/>
+    </record>
+
+    <record id="branch_user_rule" model="ir.rule">
+        <field name="name">Res Branch User</field>
+        <field name="model_id" ref="model_res_branch"/>
+        <field name="global" eval="True"/>
+        <field name="domain_force">[('id','in',user.branch_ids.ids)]</field>
+        <field name="groups"
+               eval="[(4, ref('iwesabe_branch_management.group_branch_user'))]"/>
+    </record>
+
+    <record id="res_branch_company" model="ir.rule">
+        <field name="name">Branch multi-company</field>
+        <field name="model_id" ref="model_res_branch"/>
+        <field name="global" eval="True"/>
+        <field name="domain_force">['|','|',('company_id','=',False),('company_id','=',user.company_id.id),('company_id','child_of',[user.company_id.id])]</field>
+    </record>
+
+</odoo>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_order_form_shopify_branch_inherit" model="ir.ui.view">
+        <field name="name">sale.order.form.shopify.branch.inherit</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+
+            <!-- Shopify Invoice & Pay was removed: cashiers used it after returns and
+                 left unpaid draft credit notes. Auto-pay still runs when a Shopify
+                 invoice/credit note is posted. -->
+
+            <xpath expr="//field[@name='partner_id']" position="after">
+
+                <field name="is_shopify_order" readonly="1"/>
+
+                <field name="shopify_branch_id"
+                       options="{'no_create': True, 'no_open': True}"
+                       invisible="not is_shopify_order"/>
+
+                <field name="shopify_order_ref"
+                       invisible="not is_shopify_order"/>
+
+                <field name="shopify_store_ref"
+                       invisible="not is_shopify_order"/>
+
+            </xpath>
+
+        </field>
+    </record>
+
+</odoo>
