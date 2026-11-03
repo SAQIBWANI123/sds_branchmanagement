@@ -51,6 +51,7 @@
         'static/description/banner.png',
     ],
     'qweb': ['static/src/xml/*.xml'],
+    'license': 'AGPL-3',
     'price': 49.00,
     'currency': 'EUR',
     'installable': True,
