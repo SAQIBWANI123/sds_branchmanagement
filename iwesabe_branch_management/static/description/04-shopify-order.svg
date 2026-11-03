@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+  <rect width="1440" height="900" fill="#f3f4f6"/>
+  <rect width="1440" height="46" fill="#714b67"/>
+  <text x="28" y="30" fill="#fff" font-family="Arial,sans-serif" font-size="19" font-weight="700">Odoo</text>
+  <text x="112" y="29" fill="#fff" font-family="Arial,sans-serif" font-size="16">Sales　 Orders　 Sales Orders</text>
+  <rect y="46" width="1440" height="54" fill="#fff" stroke="#ded9df"/>
+  <text x="35" y="81" fill="#292330" font-family="Arial,sans-serif" font-size="22" font-weight="700">Sales Order　 S00042</text>
+  <rect x="44" y="130" width="1352" height="660" rx="8" fill="#fff" stroke="#dcd7de"/>
+  <text x="82" y="180" fill="#714b67" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="1">SALES ORDER</text>
+  <text x="82" y="229" fill="#5b5360" font-family="Arial,sans-serif" font-size="15">Customer</text>
+  <rect x="330" y="197" width="820" height="52" rx="5" fill="#fff" stroke="#cfc8d1"/>
+  <text x="352" y="230" fill="#302b34" font-family="Arial,sans-serif" font-size="15">Example Customer</text>
+  <rect x="82" y="280" width="1276" height="56" rx="6" fill="#f3eef5"/>
+  <text x="106" y="315" fill="#392842" font-family="Arial,sans-serif" font-size="16" font-weight="700">SHOPIFY ORDER DETAILS</text>
+  <text x="82" y="390" fill="#5b5360" font-family="Arial,sans-serif" font-size="15">Is Shopify Order</text>
+  <rect x="330" y="363" width="24" height="24" rx="4" fill="#714b67"/>
+  <path d="m336 375 5 5 9-11" fill="none" stroke="#fff" stroke-width="2.5"/>
+  <text x="82" y="460" fill="#5b5360" font-family="Arial,sans-serif" font-size="15">Shopify Branch</text>
+  <rect x="330" y="430" width="820" height="52" rx="5" fill="#fff" stroke="#cfc8d1"/>
+  <text x="352" y="463" fill="#302b34" font-family="Arial,sans-serif" font-size="15">City Centre</text>
+  <text x="82" y="530" fill="#5b5360" font-family="Arial,sans-serif" font-size="15">Shopify Order Reference</text>
+  <rect x="330" y="500" width="820" height="52" rx="5" fill="#fff" stroke="#cfc8d1"/>
+  <text x="352" y="533" fill="#302b34" font-family="Arial,sans-serif" font-size="15">#1042</text>
+  <text x="82" y="600" fill="#5b5360" font-family="Arial,sans-serif" font-size="15">Shopify Store Reference</text>
+  <rect x="330" y="570" width="820" height="52" rx="5" fill="#fff" stroke="#cfc8d1"/>
+  <text x="352" y="603" fill="#302b34" font-family="Arial,sans-serif" font-size="15">store.example.com</text>
+  <rect x="82" y="664" width="1276" height="70" rx="8" fill="#fff4e5" stroke="#f1d4a9"/>
+  <text x="106" y="693" fill="#754c18" font-family="Arial,sans-serif" font-size="14" font-weight="700">Requires shati_shopify_register_payment and at least one Shopify-enabled branch.</text>
+  <text x="106" y="718" fill="#754c18" font-family="Arial,sans-serif" font-size="13">ILLUSTRATIVE UI MOCKUP — not a live Odoo screenshot.</text>
+</svg>

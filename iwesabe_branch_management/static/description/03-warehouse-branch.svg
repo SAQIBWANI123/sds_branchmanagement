@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+  <rect width="1440" height="900" fill="#f3f4f6"/>
+  <rect width="1440" height="46" fill="#714b67"/>
+  <text x="28" y="30" fill="#fff" font-family="Arial,sans-serif" font-size="19" font-weight="700">Odoo</text>
+  <text x="112" y="29" fill="#fff" font-family="Arial,sans-serif" font-size="16">Inventory　 Configuration　 Warehouses</text>
+  <rect y="46" width="1440" height="54" fill="#fff" stroke="#ded9df"/>
+  <text x="35" y="81" fill="#292330" font-family="Arial,sans-serif" font-size="22" font-weight="700">Warehouse</text>
+  <rect x="44" y="130" width="1352" height="660" rx="8" fill="#fff" stroke="#dcd7de"/>
+  <text x="82" y="180" fill="#714b67" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="1">WAREHOUSE CONFIGURATION</text>
+  <text x="82" y="228" fill="#292330" font-family="Arial,sans-serif" font-size="27" font-weight="700">City Centre Warehouse</text>
+  <text x="82" y="278" fill="#5b5360" font-family="Arial,sans-serif" font-size="15">Warehouse Name</text>
+  <rect x="330" y="246" width="820" height="52" rx="5" fill="#fff" stroke="#cfc8d1"/>
+  <text x="352" y="279" fill="#302b34" font-family="Arial,sans-serif" font-size="15">City Centre Warehouse</text>
+  <text x="82" y="365" fill="#5b5360" font-family="Arial,sans-serif" font-size="15">Short Name</text>
+  <rect x="330" y="333" width="820" height="52" rx="5" fill="#fff" stroke="#cfc8d1"/>
+  <text x="352" y="366" fill="#302b34" font-family="Arial,sans-serif" font-size="15">CCW</text>
+  <text x="82" y="452" fill="#5b5360" font-family="Arial,sans-serif" font-size="15">Company</text>
+  <rect x="330" y="420" width="820" height="52" rx="5" fill="#fff" stroke="#cfc8d1"/>
+  <text x="352" y="453" fill="#302b34" font-family="Arial,sans-serif" font-size="15">iWesabe</text>
+  <text x="82" y="539" fill="#5b5360" font-family="Arial,sans-serif" font-size="15" font-weight="700">Branch</text>
+  <rect x="330" y="507" width="820" height="58" rx="5" fill="#fcf9fd" stroke="#8a6c8c" stroke-width="2"/>
+  <text x="352" y="543" fill="#302b34" font-family="Arial,sans-serif" font-size="15">City Centre</text>
+  <path d="m1115 529 10 10 10-10" fill="none" stroke="#77717b" stroke-width="2"/>
+  <rect x="82" y="614" width="1276" height="100" rx="8" fill="#f7f5f8"/>
+  <text x="106" y="652" fill="#392842" font-family="Arial,sans-serif" font-size="15" font-weight="700">BRANCH LINK</text>
+  <text x="106" y="684" fill="#514259" font-family="Arial,sans-serif" font-size="14">The branch association helps the order workflow find a matching warehouse.</text>
+  <rect x="44" y="806" width="1352" height="56" rx="8" fill="#fff4e5" stroke="#f1d4a9"/>
+  <text x="70" y="840" fill="#754c18" font-family="Arial,sans-serif" font-size="14" font-weight="700">ILLUSTRATIVE UI MOCKUP — example layout only; not a live Odoo screenshot.</text>
+</svg>

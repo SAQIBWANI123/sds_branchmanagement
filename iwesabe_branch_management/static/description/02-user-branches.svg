@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+  <rect width="1440" height="900" fill="#f3f4f6"/>
+  <rect width="1440" height="46" fill="#714b67"/>
+  <text x="28" y="30" fill="#fff" font-family="Arial,sans-serif" font-size="19" font-weight="700">Odoo</text>
+  <text x="112" y="29" fill="#fff" font-family="Arial,sans-serif" font-size="16">Settings　 Users &amp; Companies　 Users</text>
+  <rect y="46" width="1440" height="54" fill="#fff" stroke="#ded9df"/>
+  <text x="35" y="81" fill="#292330" font-family="Arial,sans-serif" font-size="22" font-weight="700">User</text>
+  <rect x="44" y="130" width="1352" height="660" rx="8" fill="#fff" stroke="#dcd7de"/>
+  <text x="82" y="180" fill="#714b67" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="1">USER PROFILE</text>
+  <text x="82" y="226" fill="#292330" font-family="Arial,sans-serif" font-size="27" font-weight="700">Alex Morgan</text>
+  <text x="82" y="257" fill="#746d78" font-family="Arial,sans-serif" font-size="15">alex@example.com</text>
+  <path d="M82 286H1358" stroke="#e7e2e9"/>
+  <text x="82" y="332" fill="#403844" font-family="Arial,sans-serif" font-size="14" font-weight="700">BRANCH ASSIGNMENTS</text>
+  <text x="82" y="382" fill="#5b5360" font-family="Arial,sans-serif" font-size="15">Branches</text>
+  <rect x="285" y="350" width="930" height="54" rx="5" fill="#fff" stroke="#cfc8d1"/>
+  <rect x="305" y="361" width="158" height="32" rx="16" fill="#eee7f0"/>
+  <text x="323" y="382" fill="#513b58" font-family="Arial,sans-serif" font-size="14">City Centre　×</text>
+  <rect x="478" y="361" width="155" height="32" rx="16" fill="#eee7f0"/>
+  <text x="497" y="382" fill="#513b58" font-family="Arial,sans-serif" font-size="14">North Branch　×</text>
+  <text x="82" y="465" fill="#5b5360" font-family="Arial,sans-serif" font-size="15">Main Branch</text>
+  <rect x="285" y="432" width="930" height="54" rx="5" fill="#fff" stroke="#cfc8d1"/>
+  <text x="307" y="466" fill="#302b34" font-family="Arial,sans-serif" font-size="15">City Centre</text>
+  <path d="m1180 454 10 10 10-10" fill="none" stroke="#77717b" stroke-width="2"/>
+  <rect x="82" y="534" width="1276" height="116" rx="8" fill="#f7f5f8"/>
+  <text x="106" y="572" fill="#392842" font-family="Arial,sans-serif" font-size="15" font-weight="700">ACCESS GROUP</text>
+  <text x="106" y="610" fill="#514259" font-family="Arial,sans-serif" font-size="15">Branch / User</text>
+  <text x="82" y="700" fill="#746d78" font-family="Arial,sans-serif" font-size="14">Assign branches and access groups according to the user's responsibilities.</text>
+  <rect x="44" y="806" width="1352" height="56" rx="8" fill="#fff4e5" stroke="#f1d4a9"/>
+  <text x="70" y="840" fill="#754c18" font-family="Arial,sans-serif" font-size="14" font-weight="700">ILLUSTRATIVE UI MOCKUP — example layout only; not a live Odoo screenshot.</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+  <rect width="1440" height="900" fill="#f3f4f6"/>
+  <rect width="1440" height="46" fill="#714b67"/>
+  <text x="28" y="30" fill="#fff" font-family="Arial,sans-serif" font-size="19" font-weight="700">Odoo</text>
+  <text x="112" y="29" fill="#fff" font-family="Arial,sans-serif" font-size="16">Accounting　 Customers　 Invoices</text>
+  <rect y="46" width="1440" height="54" fill="#fff" stroke="#ded9df"/>
+  <text x="35" y="81" fill="#292330" font-family="Arial,sans-serif" font-size="22" font-weight="700">Customer Invoice　 INV/2026/0042</text>
+  <rect x="44" y="130" width="1352" height="660" rx="8" fill="#fff" stroke="#dcd7de"/>
+  <text x="82" y="180" fill="#714b67" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="1">INVOICE DETAILS</text>
+  <text x="82" y="230" fill="#5b5360" font-family="Arial,sans-serif" font-size="15">Customer</text>
+  <rect x="330" y="198" width="820" height="52" rx="5" fill="#fff" stroke="#cfc8d1"/>
+  <text x="352" y="231" fill="#302b34" font-family="Arial,sans-serif" font-size="15">Example Customer</text>
+  <text x="82" y="314" fill="#5b5360" font-family="Arial,sans-serif" font-size="15">Branch</text>
+  <rect x="330" y="282" width="820" height="52" rx="5" fill="#fff" stroke="#cfc8d1"/>
+  <text x="352" y="315" fill="#302b34" font-family="Arial,sans-serif" font-size="15">City Centre</text>
+  <rect x="82" y="378" width="1276" height="56" rx="6" fill="#f3eef5"/>
+  <text x="106" y="413" fill="#392842" font-family="Arial,sans-serif" font-size="16" font-weight="700">SHOPIFY REFERENCES</text>
+  <text x="82" y="488" fill="#5b5360" font-family="Arial,sans-serif" font-size="15">Shopify Branch</text>
+  <rect x="330" y="458" width="820" height="52" rx="5" fill="#fcf9fd" stroke="#d8cbdc"/>
+  <text x="352" y="491" fill="#302b34" font-family="Arial,sans-serif" font-size="15">City Centre</text>
+  <text x="82" y="558" fill="#5b5360" font-family="Arial,sans-serif" font-size="15">Shopify Order Reference</text>
+  <rect x="330" y="528" width="820" height="52" rx="5" fill="#fcf9fd" stroke="#d8cbdc"/>
+  <text x="352" y="561" fill="#302b34" font-family="Arial,sans-serif" font-size="15">#1042</text>
+  <text x="82" y="628" fill="#5b5360" font-family="Arial,sans-serif" font-size="15">Shopify Store Reference</text>
+  <rect x="330" y="598" width="820" height="52" rx="5" fill="#fcf9fd" stroke="#d8cbdc"/>
+  <text x="352" y="631" fill="#302b34" font-family="Arial,sans-serif" font-size="15">store.example.com</text>
+  <rect x="82" y="692" width="1276" height="52" rx="8" fill="#fff4e5" stroke="#f1d4a9"/>
+  <text x="106" y="724" fill="#754c18" font-family="Arial,sans-serif" font-size="14" font-weight="700">ILLUSTRATIVE UI MOCKUP — invoice references depend on the Shopify connector.</text>
+</svg>
