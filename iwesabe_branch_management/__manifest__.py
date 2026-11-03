@@ -53,7 +53,6 @@
     'qweb': ['static/src/xml/*.xml'],
     'price': 49.00,
     'currency': 'EUR',
-    'license': 'AGPL-3',
     'installable': True,
     'application': True
 }
