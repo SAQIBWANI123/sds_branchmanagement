@@ -21,37 +21,39 @@
 ##############################################################################
 
 {
-    'name': 'iwesabe Branch Management',
+    'name': 'iWesabe Branch Management',
     'version': '19.0.1.0.0',
-    'category': '',
-    'description': """
-        Branch
-    """,
+    'category': 'Sales',
+    'summary': 'Manage branches, user assignments and warehouses; trace Shopify orders and invoices in Odoo 19.',
     'author': 'SmartDeskSolutions',
     'website': 'https://www.smartdesksolutions.com',
     'description':
         """
-            This module allows to manage multiple branch or manage multiple unit or manage multiple 
-            operation in Sales, Purchases, Accounting, Payment, Voucher, Accounting Reports
-            inside single company.
+            Manage company branches, assign main and allowed branches to users,
+            group branches for reporting, and link warehouses to branches. Add
+            branch information to accounting records and connect Shopify orders
+            and invoices to branches and store references. Requires
+            shati_shopify_register_payment in addition to Sales, Accounting,
+            and Inventory.
         """,
-    'depends': ['base', 'sale_management', 'account', 'shati_shopify_register_payment'],
+    'depends': ['base', 'sale_management', 'account', 'stock', 'shati_shopify_register_payment'],
     'data': [
         'security/security.xml',
         'security/ir.model.access.csv',
         'views/res_branch.xml',
         'views/res_users.xml',
+        'views/stock_warehouse_views.xml',
+        'views/account_move_views.xml',
         'views/sale_order_shopify_view.xml',
         'views/account_move_shopify_view.xml',
     ],
-    
     'images': [
         'static/description/banner.png',
     ],
     'qweb': ['static/src/xml/*.xml'],
     'price': 49.00,
     'currency': 'EUR',
-    'license': 'OPL-1',
+    'license': 'AGPL-3',
     'installable': True,
     'application': True
 }
